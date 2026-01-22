@@ -21,6 +21,9 @@ console.log(anotherArr1);
 const anotherArr2 = anotherArr.flat(1);
 console.log(anotherArr2);
 
+const anotherArr3 = anotherArr.flat(2);
+console.log("Flat 2- "+anotherArr3);
+
 //flat - specify the how the nested arrays flated, default value is 1,
 //infinity -flatnes all levels no matters how deep
 //flat does not change original array it returns new array useful when working with nested data
@@ -43,6 +46,8 @@ let score1 = 100;
 let score2 = 200;
 let score3 = 300;
 console.log(Array.of(score1,score2,score3)); // create new array from given vlaues no matter how many
+console.log(Array.of("mango", "apple","orange"));
+
 //of-->coverts values to array
 //from--->converts iteratable to array
 
