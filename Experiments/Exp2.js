@@ -23,7 +23,6 @@ let str = "Ankita";
 console.log(str);
 
 //Activity 2---find largest number in string
-console.log("Activity 2--->");
 
 //Activity 3 --->rever a string 
 console.log("Activity 3---->");
