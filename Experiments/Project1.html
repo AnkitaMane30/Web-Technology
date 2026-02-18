@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    
+</head>
+<style>
+        div{
+            width: fit-content;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            margin-left: 500px;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            font-weight: bold;
+        }
+</style>
+<body>
+    <div>
+        <h1 style="text-align: center;">Age Calculator</h1>
+        <label>
+        Enter your Date Of Birth:
+        </label>
+        <input type = "date" id="dob"/>
+        <br><br>
+        <input type="button" value="Calculate Age" id="agebtn" onclick="calculateAge()"/>
+        <br><br>
+        <p id="age"></p>
+    </div>
+    <script src = "Project1.js"></script>
+</body>
+</html>
