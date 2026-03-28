@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crop Information</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<h1 class="title">🌾 AgriProfit - Farm Expense Tracker</h1>
+
+<div class="nav-links">
+<a href="index.html">Dashboard</a>
+<a href="AddExpense.html">Add Expense</a>
+<a href="AddSales.html">Add Sales</a>
+<a href="TransactionHistory.html">History</a>
+</div>
+</nav>
+
+<h2>Crop Information</h2>
+
+<div class="crop-container">
+
+<input type="text" id="cropInput" placeholder="Enter crop name (e.g. tomato)">
+
+<button onclick="getCropInfo()">Get Crop Info</button>
+
+<div id="cropResult"></div>
+
+</div>
+
+<script src="crop.js"></script>
+
+</body>
+</html>
