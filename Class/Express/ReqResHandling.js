@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
     console.log(req.query.name)
 })
 
+
 //Activity 1 - detail study about query parameter  
 //Activity 2 - 3-4 examples of query parameters 
 //Activity 3 - real time use of query parameter

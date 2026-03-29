@@ -7,6 +7,7 @@ app.get("/",(req,res)=>{
     res.send("welcome To home page")
 })
 
+
 app.get("/about",(req,res)=>{
   res.send("This is About page")
 })
