@@ -26,6 +26,34 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+//middleware
+// function checkRoute(req, res, next){
+//     console.log(req.url);
+//     next();
+//     //if we do not write the next() the the request hang
+//     //then the page loads only , do not show annything
+// }
+
+// app.use(checkRoute)
+
+//advance level middleware
+app.use((req, res , next) => {
+    console.log(`Data recieved : ${new Date()}`)
+    next();
+})
+
+app.get("/", (req, res) => {
+    res.send("Hello");
+})
+
+app.get("/GetTime", (req, res) => {
+    const time = Date();
+    res.json({
+        message : "Hello",
+        time1 : time
+    })
+})
+
 app.get("/",(req, res)=>{
     res.send("Welcome to Home page");
 })
