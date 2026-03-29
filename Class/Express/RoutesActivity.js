@@ -77,6 +77,7 @@ app.listen(port, ()=>{
     console.log(`server Running on port ${port}`);
 });
 
+
 //Activity 4 - HTTP methods 
 //GET - Get data from server
 //E.g. - Fetch users
