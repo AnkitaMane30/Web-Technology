@@ -59,3 +59,31 @@ Activity 1 - Why we use middleware ?
 Activity 2 - What are the types of middleware ?
 Activity 3 - What are the benefits of middleware ?
 Activity 4 - Where the middleware is used in company level ?
+
+Flow of express
+1. import statements 
+2. middleware
+3. routes
+4. port listen code
+
+What are the query parameters ? --MOST IMPORTANT
+
+Query parameter activities
+//Activity 1 - detail study about query parameter  
+//Activity 2 - 3-4 examples of query parameters 
+//Activity 3 - real time use of query parameter
+
+//Response Object --> The response object send data back to the client 
+//Common response methods 
+//1. res.send -- send text
+//2.res.json() -- send json format
+//3.res.status() -- check http status
+//4.res.sendFiles() -- to send files
+
+app.get('/', (req, res) => {
+    const T = new Date();
+    res.json({
+        mess : "Hello",
+        Time : T
+})
+})
