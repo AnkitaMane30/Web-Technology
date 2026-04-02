@@ -4,6 +4,10 @@ const port = 3000;
 
 app.get("/",(req,res)=>{
     const time = Date();
+    res.json({
+      message:"Hello",
+      time1: time
+    })
     res.send("welcome To home page")
 })
 
