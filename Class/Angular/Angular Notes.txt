@@ -1,0 +1,15 @@
+Q. Differec
+Angular is typescript based fronted framework , developed by google
+It helps us build a single page application (SPA)
+SPA - where the page does not fully reload when navigation between different viwes.
+
+Angular Tools  -
+node js, npm (Node package manager), CLI(Command Line Interface)
+
+CLI - Used for create and manage angulars apps
+
+IQ :-
+1.How to create angular project
+2.what is npm and ng
+
+ng - is a initials of angular
