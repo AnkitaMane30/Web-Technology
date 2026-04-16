@@ -1,2 +1,19 @@
 <p>home works!</p>
 {{fname}}
+{{myRoll}}
+{{course}}
+
+<br>
+
+<button (click)="ShowButton()"> Show me</button>
+<br>
+<input [(ngModel)]="fname" placeholder="Enter name">
+<br>
+<input [(ngModel)]="myRoll" placeholder="Enter roll no">
+<br>
+<input [(ngModel)]="course" placeholder="Enter course">
+<br>
+
+<ul>
+    <li *ngFor = "let s of city">{{s}}</li>
+</ul>

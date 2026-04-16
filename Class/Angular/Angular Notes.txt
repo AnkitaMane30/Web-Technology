@@ -53,3 +53,57 @@ types of data binding
 
 2.two way -
  -node modules
+
+ ---Data Binding ---- 13 April 2026
+Data binding is a binding technique it connects UI to code
+There are two types of data binding 
+1. One way 
+      1. interpolation --  syntax --{{value}}
+      - Show data from ts to html 
+      2. property binding --- Syntax-->  [property] = "value"
+      - Bind html property to ts variable
+      3. event binding --- Syntax --> (click) = 'function()'
+      - call function on event 
+   
+
+2.two way -
+ ngModel - sync data both ways ts to html and html to ts
+      [(ngModel)] = 'Value'
+
+
+Modules 
+- Before angular 15 we need ngModules
+- nowadays we are using angular 20+ version so modules are optional
+- uYou can now use standalone components
+- older angular --> modules
+- new angular --> components are used
+
+Directives
+- Think the directives like the magic wands that can change your web page without rewriting it
+- There are two types of directives structural and attribute directive
+1. Structural directives - change the structure of your page like add, remove or repeated things  --> ngIf, ngFor, ngSwitch
+2. Attribute directives - ng style
+
+
+Routing 
+- navigation between one page to another page is Routing
+- 
+
+Homeactivity 
+1. how we can use if else for loop switch case in angular with examples
+2. 
+
+
+-----------------15-04-2026-------------------------------------------------------
+#Directive Activity
+1.show - hide
+2.toggle
+3.if values equals show div else hide
+4.display the slected value in drop down list to the div 
+
+Services - 
+- command to create service:
+   > ng g s Services_name;
+
+Services Activity-
+1.write 2 ex with services in angular and learn more about dependancies injection
