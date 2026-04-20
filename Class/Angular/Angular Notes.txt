@@ -107,3 +107,7 @@ Services -
 
 Services Activity-
 1.write 2 ex with services in angular and learn more about dependancies injection
+
+
+---------------
+Routing - navigation between 

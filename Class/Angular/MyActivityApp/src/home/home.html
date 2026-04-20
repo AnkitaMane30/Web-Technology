@@ -1,0 +1,63 @@
+<!-- <p>home works!</p> -->
+
+<h3>Show/hide Activity</h3>
+
+@if(isVisible){
+    <div style="width:100%; height:250px; background-color:rgb(128, 0, 81); border:2px solid black; color:rgb(15, 14, 14); display:flex; border-radius: 5px;">
+  </div>
+}@else{
+
+}
+
+<button (click)="showDiv()">Show</button>
+<button (click)="hideDiv()">Hide</button>
+
+<hr>
+
+<h3>Toggle color Activity</h3>
+
+<div style="width:100%; height:250px; border:2px solid black; color:white; display:flex; align-items:center; justify-content:center;" [style.background-color]="isPink ? 'pink' : 'purple'">
+
+</div>
+
+<button (click)="toggleColor()">Toggle Color</button>
+
+<hr>
+
+<h3>Number comparison</h3>
+
+@if(num1 === num2){
+  <div style="width:100%; height:250px; background-color:rgb(128, 0, 60); border:2px solid black; color:rgb(15, 14, 14); display:flex; border-radius: 5px; justify-content: center; align-items: center;">
+    <h2>The numbers are equal !!</h2>
+  </div>
+}@else{
+
+}
+
+<input type="number" placeholder="Enter number 1" [(ngModel)]="num1">
+<br><br>
+
+<input type="number" placeholder="Enter number 2" [(ngModel)]="num2">
+<br><br>
+
+<hr>
+
+<h3>Acitivity 4</h3>
+<h4>Select course : </h4>
+
+<div style="width:100%; height:250px; background-color:rgb(255, 192, 241); border:2px solid black; color:rgb(15, 14, 14); display:flex; border-radius: 5px; justify-content: center; align-items: center;">
+    @if(selectedCourse){
+      Selected Course : {{selectedCourse}}
+    }@else{
+      Please select a course
+    }
+</div>
+
+<select [(ngModel)]="selectedCourse">
+  <option value="">Select course</option>
+
+  @for(c of courses; track c;){
+    <option [value]="c">{{c}}</option>
+  }
+
+</select>
