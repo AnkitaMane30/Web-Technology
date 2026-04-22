@@ -109,5 +109,11 @@ Services Activity-
 1.write 2 ex with services in angular and learn more about dependancies injection
 
 
----------------
-Routing - navigation between 
+--------------- 20-04-2026---------------------------------------
+Routing - navigation between one page to another page
+
+You have made change in 3 files
+1. app.routes.ts -- Bind all components
+2. app.ts
+3. app.html
+
