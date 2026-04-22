@@ -61,3 +61,23 @@
   }
 
 </select>
+
+<hr>
+<h3>Servises Activity 1 : Student List</h3>
+<ul>
+  <li *ngFor ="let s of students">{{s.name}}</li>
+</ul>
+
+<hr>
+<h2>Services Activity 2: Login</h2>
+<input type="text" [(ngModel)]="username" placeholder="Enter Username">
+  <br><br>
+
+  <input type="password" [(ngModel)]="password" placeholder="Enter Password">
+  <br><br>
+
+  <button (click)="onLogin()">Login</button>
+
+  <p>{{ message }}</p>
+
+  <hr>
