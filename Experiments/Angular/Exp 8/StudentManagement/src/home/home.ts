@@ -27,6 +27,9 @@ export class Home {
     this.student.course = this.newStudent.course;
   }
 
+  //image path 
+  src = "https://img.freepik.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?semt=ais_hybrid&w=740&q=80"
+
     //array of courses
   courses : string[] = ["CSE", "AIML", "AIDS", "ENTC"];
 
