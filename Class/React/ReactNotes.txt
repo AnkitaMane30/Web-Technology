@@ -1,0 +1,80 @@
+# React
+-React is a js library , developed by meta
+-It is single page application.
+
+#why do we use React
+-traditional js reloads full page
+-hard to manage large application 
+-But React upadates only required part , use reusable components
+
+# Virtual DOM
+-React creates a copy of real DOM means virtual DOM.
+-when data changes react updates virtual DOM.
+-updates only changed part in real DOM.
+-used for High Performance.
+
+# How we can create project in React
+For react we need - node and npm
+> npm create vite@latest StudentApp
+
+#vite
+-it is fast build tool
+-npm install : installs all dependancies
+-npm run dev: start server.
+
+#index.html -
+-It is a main file
+
+#what is .jsx
+- It means Javascript + XML , It allows to write html code inside the Javascript
+- main.jsx file is entry point file of react application.
+-Syntax
+        const element = <h1>Hello react</h1>
+
+#Rules of jsx
+-must return single paraent
+-use scope {} brackets for Javascript
+
+# components 
+- components are heart of react
+- there is one component - functional component
+-ex
+    function student(){
+        return <h1> This is functional component</h1>;
+    }
+#How to use Component-
+- function app(){ // root function
+    return <> <student/>
+    </>;
+}
+
+# Properties (Props):
+- Data passes from parent to child
+-ex. 
+    //parent
+    function app(){ 
+    return <student Fname= "AGM" />
+    }
+
+    //child:
+    function student(props){
+        return <h2>Name: {props.Fname}</h2>;
+    }
+ 
+
+Activities -
+1.what is different between angular and react?
+2.which one has more market hike?
+3.why react library is created?
+4.What is component , Types of component?
+5.where we use component react with 2 example
+6. what is props, why we use props , types of props with 2 example. 
+
+----------------------------------------22-04-2026----------------------
+State - 
+-Data that can change , values changes over the time
+-when state change UI updates automatically
+
+#why we use state -
+with State: UI updates automatically.
+withOut state : value will not update on screen 
