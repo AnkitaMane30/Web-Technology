@@ -1,0 +1,21 @@
+<!-- <p>add-student works!</p> -->
+<div class="form-container">
+    <div class="form-card">
+        <h2>Add Student</h2>
+
+        <form (ngSubmit)="addStudent()">
+
+            <input type="text", [(ngModel)]="student.name", name="name", placeholder="Enter Name", required />
+            <br><br>
+
+            <input type="text", [(ngModel)]="student.age", name="age", placeholder="Enter Age", required />
+            <br><br>
+            
+            <input type="text", [(ngModel)]="student.course", name="course", placeholder="Enter Course", required />
+            <br><br>
+
+            <button type="submit">Add student</button>
+        </form>
+    </div>
+
+</div>
