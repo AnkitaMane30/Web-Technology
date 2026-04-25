@@ -6,8 +6,8 @@ function StateEx(props){
     return(
     <> 
             <h1>Name: {props.fname}</h1>
-            <h1>Name: {props.age}</h1>
-            <h1>Name: {props.course}</h1>
+            <h1>Age: {props.age}</h1>
+            <h1>Course: {props.course}</h1>
 
     </>
  );
