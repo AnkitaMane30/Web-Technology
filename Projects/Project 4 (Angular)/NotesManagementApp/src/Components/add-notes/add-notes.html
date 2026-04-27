@@ -1,0 +1,25 @@
+<!-- <p>add-notes works!</p> -->
+
+<h2>Add Notes</h2>
+<form (ngSubmit)="addNotes()">
+
+    <label>Tilte:</label>
+    <input type="text" [(ngModel)]="note.title" name="title" required/>
+    <br/><br/>
+
+    <label>Description:</label>
+    <textarea [(ngModel)]="note.description" name="description" required></textarea>
+    <br/><br/>
+
+    <label>Category:</label>
+    <input type="text" [(ngModel)]="note.category" name="category" required/>
+    <br/><br/>
+
+    <label>
+        <input type="checkbox" [(ngModel)]="note.important" name="important">Important
+    </label>
+
+    <br/><br/>
+
+    <button type="submit">Add Note</button>
+</form>

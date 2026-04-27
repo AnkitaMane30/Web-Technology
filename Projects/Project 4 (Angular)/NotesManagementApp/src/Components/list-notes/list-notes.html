@@ -1,0 +1,29 @@
+<!-- <p>list-notes works!</p> -->
+<p *ngIf="notes.length === 0">
+  No notes available.
+</p>
+
+<div *ngFor="let note of notes">
+
+  <h3>{{ note.title }}</h3>
+
+  <p>{{ note.description }}</p>
+
+  <p><strong>Category:</strong> {{ note.category }}</p>
+
+  <p><strong>Date:</strong> {{ note.date }}</p>
+
+  <p>
+    <strong>Important:</strong>
+    {{ note.important ? 'Yes' : 'No' }}
+  </p>
+  <button [routerLink]="['/update', note.id]">
+   Edit
+  </button>
+  <button (click)="deleteNotes(note.id)">
+    Delete
+  </button>
+
+  <hr>
+
+</div>
