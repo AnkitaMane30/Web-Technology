@@ -1,0 +1,43 @@
+SQL - Structure query language
+- It used to communicate between relation database
+-databases:
+    MYSQL
+    MYSQL Server
+
+-Database Operations:
+create table, insert table, select, update,delete
+
+//Create table
+CREATE TABLE student(id NUMBER, name VARCHAR, email VARCHAR, course VARCHAR);
+
+//INSERT TABLE
+INSERT INTO student(id, name, email, course) VALUES (306, "Ankita", "ankita@gmail.com", "AIML");
+
+//select table
+SELECT * FROM student
+
+//update table
+UPDATE student SET name = "ANkita Mane" WHERE id = 306;
+
+//Delete table
+DELETE FROM student WHERE id = 306;
+
+#ORM (Object Relational Mapping) -
+Instead of writing sql queries ,we use javascript object
+
+without ORM - select * from student
+with ORM - student.findAll()
+
+#Web Socket
+                alway connection
+client request <----------------> server Response
+
+-web socket allows us real time communication
+-real time example - whatsapp, chat APP, live stock price updates, online gaming, notification
+-To install web socket in our project 
+    >npm install websocket
+
+
+Activities -
+1.deep study web socket 
+2.understand web socket with example
